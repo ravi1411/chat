@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const colors = require("colors");
 
 const dbConnect = async () => {
+
   try {
     const connectionString = await mongoose.connect(process.env.MONGODB_URI, {
       useUnifiedTopology: true,
