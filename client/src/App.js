@@ -3,8 +3,8 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import ChatPage from "./pages/ChatPage";
 import FourOFour from "./pages/FourOFour";
-// commit test -------------------
-function App() {git 
+
+function App() {
   return (
     <div className="App">
       <Routes>
