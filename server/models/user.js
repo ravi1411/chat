@@ -34,7 +34,7 @@ userSchema.pre("save", async function hashPassword(next) {
   if (!this.isModified) {
     next();
   }
-  //   ? hash the password
+  //   ? hash the password for user
   this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
 });
 
